@@ -1,0 +1,53 @@
+<header>{{text}}</header>
+<div class="box">
+	<div class="position">
+		先蜂侠需要获取你的精确坐标
+	</div>
+	<div class="linear"></div>
+	<div class="flash">
+		<p class="send"><span></span>闪送超市</p>
+		<p>￥0起送，22:00前满￥30减免运费，22:00后满￥69减免运费</p>
+	</div>
+	<div class="time">
+		<p>收货时间</p>
+		<p class="one">一小时送达</p>
+		<p class="final">可预订></p>
+	</div>
+	<div class="tips">
+		收货备注
+		<input type="text" placeholder="可输入100字以内特殊要求内容"/>
+	</div>
+	<!--展示购物车的内容区域-->
+	<ul class="list">
+		<li ng-repeat="p in car" ng-show="p.num>0">
+			<div class="choice">
+				<label class="choice">
+					<input ng-change="selectFn()" type="checkbox" ng-model="p.state">
+					<p></p>
+				</label>
+			</div>
+			
+			<div class="picture">
+				<img ng-src="{{p.img}}" alt="" />
+			</div>
+			<div class="names">
+				<p>{{p.name}}</p>
+				<p>￥{{p.price}}</p>
+			</div>
+			<div class="operation">
+				<span class="minus" ng-click="addcart(p,-1)">-</span>
+				<span class="number" >{{p.num}}</span>
+				<span class="add" ng-click="addcart(p,1)">+</span>
+			</div>
+		</li>	
+	</ul>
+	<!--买单区域-->
+	<div class="ok">
+		<label class="cbox">
+			<input type="checkbox" ng-model="state" ng-change="selectAll()" />
+			<p></p>
+		</label>
+		<div class="cost">共：<span>{{countServer.total | currency:'￥'}}</span></div>
+		<div class="btn">选好了</div>
+	</div>
+</div>

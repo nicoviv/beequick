@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	display: block;
+	border:none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+body{
+	width: 100%;
+	font-family: '微软雅黑';
+	margin: 0 auto;
+}
+
+.clearFloat:after{
+	content: "";
+	display: block;
+	clear: both;
+}

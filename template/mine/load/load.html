@@ -1,0 +1,25 @@
+<header class="h-header">
+	<div class="second-bg back" ui-sref="mine"></div>
+	<p ng-bind="title"></p>
+	<div class="second-bg refresh"></div>
+</header>
+<!--秒杀内容区域-->
+<div class="kill">
+	<div class="tips">
+		<p>为了方便您及时查询订单信息，鲜蜂侠需要获取你的账号信息</p>
+	</div>
+	<form action="" method="post">
+		<!--<label name="email">Your email</label>
+		<input type="email" name="email" ng-model="email" placeholder="Email Address" required/>
+
+		<input type="text" ng-minlength="5" ng-maxlength="20" ng-pattern="/^[A-Z]+$/" required/>
+		<input type="submit" value="提交" />-->
+		
+		
+		<div class="tao"><input type="text" placeholder="请输入用户名" name="username" required/><br /></div>
+		<div class="tao"><input type="password" name="pwd" placeholder="请输入密码" required/><br /></div>
+		<div class="tao"><input type="tel" name="phone" placeholder="注册时的手机号码"/></div>
+		<div class="tao"><input type="email" name="email" ng-model="user.email" placeholder="请输入邮箱"/></div>
+		<input type="submit" value="确定" />
+	</form>
+</div>

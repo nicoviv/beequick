@@ -1,0 +1,29 @@
+<header class="h-header">
+	<div class="second-bg back" ui-sref="home"></div>
+	<p>疯狂秒杀</p>
+	<div class="second-bg refresh"></div>
+</header>
+<!--秒杀内容区域-->
+<div class="kill">
+	<div class="second-banner">
+		<img src="img/second-banner.png" alt="" />
+	</div>
+	<div>
+		<ul class="second-box">
+			<li ng-repeat="i in second">
+				<div class="second-pimg">
+					<img ng-src="{{i.img}}" alt="" />
+				</div>
+				<div class="second-introduction">
+					<h4>{{i.name}}</h4>
+					<h4>{{i.specifics}}</h4>
+					<p>
+						<span class="sales">￥{{i.price}}</span>
+						<span>/原价：{{i.market_price}}元</span>
+					</p>
+					<button>{{i.btnText}}</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

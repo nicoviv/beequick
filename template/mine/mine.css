@@ -1,0 +1,178 @@
+header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 4.21875rem;
+	background-color: #ffd600;
+}
+.htop{
+	display: flex;
+	height: 3.125rem;
+	align-items: center;
+}
+.htop{
+	margin-left: 0.46875rem;
+}
+.htop img{
+	/*height: 0.515625rem;*/
+	width: 2.078125rem;
+}
+.username{
+	margin-left: 0.46875rem;
+	width: 3.125rem;
+	flex-grow: 1;
+}
+.username h5{
+	font-size: 0.45rem;
+	font-weight: 700;
+	margin-bottom: 0.3125rem;
+	color: #fff;
+}
+.username div{
+	background: url(../../img/mine3.png) no-repeat;
+	background-size: contain;
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+	padding-left: 1.25rem;
+	color: #e64f1a;
+	font-size: 0.4rem;
+}
+.back{
+	margin-right: .525rem;
+	font-size: 0.46875rem;
+}
+.back img{
+	width: 0.328125rem;
+}
+.hbottom{
+	background-color: #f3c800;
+	height: 1.09275rem;
+	display: flex;
+	/*justify-content: center;*/
+}
+.hbottom div{
+	flex: 1;
+	background-size: 12%;
+	background-position: 1.5625rem center;
+}
+.goods{
+	background: url(../../img/mine4.png) no-repeat;
+}
+.store{
+	background: url(../../img/mine5.png) no-repeat;
+}
+.hbottom span{
+	height: 1.09275rem;
+	line-height: 1.09275rem;
+	margin-left: 2.5rem;
+	font-size: 0.38rem;
+	color: #fff;
+}
+.goods::after{
+	content: '';
+	display: inline-block;
+	width: 0.05rem;
+	height: 10%;
+	background: #fff;
+	position: absolute;
+	right: 5rem;
+	bottom: 0.3rem;
+}
+/*用户的订单区域*/
+.user{
+	position: absolute;
+	top: 4.21875rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #efefef;
+	overflow: auto;
+}
+.hi{
+	display: flex;
+	height: 1.53125rem;
+	background-color: #fff;
+	margin: 0.28125rem auto 0.03125rem;
+	justify-content: space-between;
+	padding: 0.55625rem;
+	align-items: center;
+	font-size: 0.45rem;
+}
+.all{
+	color: #999;
+}
+.operation ul{
+	background-color: #fff;
+	display: flex;
+	border-bottom: 0.3125rem solid #efefef;
+}
+.operation li{
+	text-align: center;
+	width: 25%;
+	padding: 0.6875rem 0 0.3125rem 0; 
+}
+.operation li::before{
+	display: block;
+	content: "";
+	background: url(../../img/minelogo.png) no-repeat 0.026667rem 0;
+	width: 0.586667rem;
+	height:0.586667rem;
+	background-size: 200%;
+	margin:0 auto 0.3125rem;
+}
+.operation li:nth-child(2):before{
+	background-position:  -0.56rem 0;
+}
+.operation li:nth-child(3):before{
+	background-position:  0 -0.586667rem;
+}
+.operation li:nth-child(4):before{
+	background-position:  -0.56rem -0.586667rem;
+}
+.favorable ul{
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+}
+.favorable li{
+	width: 25%;
+	text-align: center;
+	padding: 1rem 0 0.46875rem 0;
+}
+.favorable li:before{
+	display: block;
+	content: "";
+	width: 1.09375rem;
+	height: 1.09375rem;
+	margin: 0 auto;
+}
+.favorable li:first-of-type:before{
+	background: url(../../img/mine11.png) no-repeat;
+	background-size: contain;
+}
+.favorable li:nth-of-type(2):before{
+	background: url(../../img/mine12.png) no-repeat;
+	background-size: contain;
+}
+.favorable li:nth-of-type(3):before{
+	background: url(../../img/mine13.png) no-repeat;
+	background-size: contain;
+	
+}
+.favorable li:nth-of-type(4):before{
+	background: url(../../img/mine14.png) no-repeat;
+	background-size: contain;
+}
+.favorable li:last-of-type:before{
+	background: url(../../img/mine15.png) no-repeat;
+	background-size: contain;
+}
+.mine0{
+	margin: 1.5rem auto 0;
+	height: 1.5rem;
+	background-color: #fff;
+	text-align: center;
+	font-size: 0.46875rem;
+	line-height: 1.5rem;
+}

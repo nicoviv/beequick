@@ -1,0 +1,76 @@
+/*秒杀页面头部*/
+.h-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.4375rem;
+	background-color: #f9fafd;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+}
+.h-header .second-bg{
+	height: 0.65625rem;
+	width: 0.65625rem;
+	margin: 0 0.3125rem;
+	background-size: cover;
+}
+.back{
+	background: url(../../../img/second-back.gif) no-repeat;
+}
+.refresh{
+	background: url(../../../img/second-refresh.gif) no-repeat;
+}
+.h-header p{
+	font-size: 0.4375rem;
+}
+/*秒杀商品区*/
+.kill{
+	width: 100%;
+	position: absolute;
+	top: 1.4375rem;
+	bottom: -1.5625rem;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #fff;
+	overflow: auto;
+}
+.tips{
+	background-color: #ffd600;
+	display: flex;
+	font-size: 0.40625rem;
+}
+.tips:before{
+	display: block;
+	content: '';
+	width: 5rem;
+	/*height: 2.15625rem;*/
+	background: url(../../../img/load.png) no-repeat;
+	background-size: contain;
+}
+.tips p{
+	/*height: 2.15625rem;*/
+	padding: 0.3125rem 0 0.3125rem 0.15625rem;	
+}
+form{
+	text-align: center;
+}
+input{
+	/*background: #ffd600;*/
+	width: 5.125rem;
+	height: 0.78125rem;
+	margin: 0.26875rem auto;
+	border:  none;
+	outline: none;
+}
+.tao{
+	border: 1px solid #777777;
+	border-top: none;
+}
+input[type="submit"]{
+	
+}

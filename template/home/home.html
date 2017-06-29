@@ -1,0 +1,158 @@
+<!--页面头部-->
+<header class="h-header">
+	<div class="h-scan">
+		<img src="./img/hsao.png" alt="" />
+		<p>扫一扫</p>
+	</div>
+	<p>物美超市(三旗百汇店)▼</p>
+	<div class="h-search">
+		<img src="./img/hsearch.gif" alt="" />
+		<p>搜索</p>
+	</div>
+</header>
+<div class="h-contents">
+	
+	<!--轮播图部分-->
+	<div class="swiper-container h-banner">
+		<div class="swiper-wrapper" >
+			<a href="#" class="swiper-slide" ng-repeat='i in loops'><img ng-src="{{i.activity.img}}"></a>
+		</div>
+		<div class="swiper-pagination" id="pagination"></div>
+	</div>
+	
+	<!--分割区-->
+	<div class="h-square"></div>
+	
+	<!--导航菜单栏部分-->
+	<div class="h-navs">
+		<ul>
+			<li ng-repeat="j in navs" ui-sref="{{$index}}">
+				<img ng-src="{{j.activity.img}}" alt="" />
+				<p >{{j.activity.name}}</p>
+			</li>
+		</ul>
+	</div>
+	
+	<!--分割区-->
+	<div class="h-square"></div>
+	
+	<!--骑士酸牛奶促销区域-->
+	<div class="h-milk">
+		<div><img src="img/h-milk-1.jpg@90Q" alt="" /></div>
+		<div><img src="img/h-milk-2.jpg" alt="" /></div>
+		<div><img src="img/h-milk-3.jpg@90Q.jpg" alt="" /></div>
+	</div>
+	
+	<!--分割区-->
+	<div class="h-square"></div>
+	
+	<!--便利店-->
+	<div class="h-store">
+		<img src="img/h-store.png@90Q.png" alt="" />
+	</div>
+	
+	<!--热销榜-->
+	<div class="h-hotsales">
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<!--牛奶面包等菜单分类-->
+	<div class="h-bread">
+		<ul>
+			<li>
+				<div><img src="img/h-m1.png@90Q.png" alt="" /></div>
+				<p>牛奶面包</p>
+			</li>
+			<li>
+				<div><img src="img/h-m2.png@90Q.png" alt="" /></div>
+				<p>饮料酒水</p>
+			</li>
+			<li>
+				<div><img src="img/h-m3.png@90Q.png" alt="" /></div>
+				<p>优选水果</p>
+			</li>
+			<li>
+				<div><img src="img/h-m4.png@90Q.png" alt="" /></div>
+				<p>更多</p>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<!--鸭货广告-->
+	<div class="h-ducks">
+		<div><img src="img/h-milk-5.jpg@90Q.jpg" alt="" /></div>
+		<div><img src="img/h-milk-4.jpg@90Q.jpg" alt="" /></div>
+	</div>
+	
+	<!--分割区-->
+	<div class="h-square"></div>
+	
+	<!--优选水果区域-->
+	<div class="h-fruit">
+		<!--水果标题-->
+		<div class="h-title f-color">
+			<h5>优选水果</h5>
+			<p ui-sref="market">更多></p>
+		</div>
+		<!--水果广告-->
+		<div class="h-fimg"><img src="img/h-fruit.jpg@90Q.jpg" alt="" /></div>
+		<!--水果内容-->
+		<div class="hfcontent">
+			<ul class="hfcontent-box">
+				<!--ng-if="$index<3"会增加很多注释-->
+				<li ng-repeat="i in fruit" >
+					<div><img ng-src="{{i.img}}" alt="" /></div>
+					<h6>{{i.name}}</h6>
+					<!--买一赠一是否渲染-->
+					<p><span class="h-choice">精选</span><span ng-class="i.pm_desc?'h-moreone':''">{{i.pm_desc}}</span></p>
+					<p class="hml">{{i.specifics}}</p>
+					<p class="hprice">
+						<span class="hprice-left">￥{{i.price}}</span>
+						<span
+							class="hprice-right">￥{{i.market_price}}</span>
+					</p>
+					<p class="h-add" ng-click="addcart(i,1)">+</p>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	
+	<!--分割区-->
+	<div class="h-square"></div>
+	
+	<!--牛奶面包区域-->
+	<div class="h-fruit">
+		<!--面包标题-->
+		<div class="h-title b-color">
+			<h5>牛奶面包</h5>
+			<p ui-sref="market">更多></p>
+		</div>
+		<!--牛奶面包广告-->
+		<div class="h-fimg"><img src="img/h-bread1.jpg@90Q.jpg" alt="" /></div>
+		<!--牛奶面包内容-->
+		<div class="hfcontent">
+			<ul class="hfcontent-box">
+				<li ng-repeat="i in bread">
+					<div><img ng-src="{{i.img}}" alt="" /></div>
+					<h6>{{i.name}}</h6>
+					<!--买一赠一是否渲染-->
+					<p><span class="h-choice">精选</span><span ng-class="i.pm_desc?'h-moreone':''">{{i.pm_desc}}</span></p>
+					<p class="hml">{{i.specifics}}</p>
+					<p class="hprice">
+						<span class="hprice-left">￥{{i.price}}</span>
+						<span
+							class="hprice-right">￥{{i.market_price}}</span>
+					</p>
+					<p class="h-add" ng-click="addcart1(i,1)">+</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+</div>	
+

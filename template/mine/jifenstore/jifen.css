@@ -1,0 +1,118 @@
+/*秒杀页面头部*/
+.h-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.4375rem;
+	background-color: #f9fafd;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+}
+.h-header .second-bg{
+	height: 0.65625rem;
+	width: 0.65625rem;
+	margin: 0 0.3125rem;
+	background-size: cover;
+}
+.back{
+	background: url(../../../img/second-back.gif) no-repeat;
+}
+.refresh{
+	background: url(../../../img/second-refresh.gif) no-repeat;
+}
+.h-header p{
+	font-size: 0.4375rem;
+}
+/*秒杀商品区*/
+.kill{
+	width: 100%;
+	position: absolute;
+	top: 1.4375rem;
+	bottom: -1.5625rem;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #fff;
+	overflow: auto;
+}
+.second-banner img{
+	width: 100%;
+}
+/*商品的展示区域*/
+.operation{
+	height: 2.40625rem;
+	border-bottom: 0.3125rem solid #efefef;
+	border-top: 0.03125rem solid #efefef;
+	
+}
+.operation ul{
+	display: flex;
+	align-items: center;
+}
+.operation li{
+	width: 33.33%;
+	border-right: 2px solid #efefef;
+	text-align: center;
+	font-size: 0.40625rem;
+	color: #999;
+}
+.operation li:before{
+	display: block;
+	content: "";
+	width: 0.859375rem;
+	height: 0.859375rem;
+	margin: 0.3125rem auto 0.3125rem;
+}
+.operation li:first-of-type:before{
+	background-image:url(../../../img/jifen1.png) ;
+	background-size: contain;
+}
+.operation li:nth-of-type(2):before{
+	background-size: contain;
+	background-image:url(../../../img/jifen2.png) ;
+	
+}
+.operation li:last-of-type:before{
+	background-image:url(../../../img/jifen3.png) ;
+	background-size: contain;
+}
+.favorable ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.favorable li{
+	width: 50%;
+	padding-left: 0.3125rem;
+}
+.favorable p{
+	margin: 0.15625rem auto;
+	font-size: 0.40625rem;
+}
+.favorable li:before{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 2.25rem;
+	margin: 0.15625rem auto;
+	background-repeat: no-repeat;
+}
+.favorable li:first-of-type:before{
+	background-image: url(../../../img/2016121914354613.jpg@300w_300h_90Q.jpg);
+	background-size: contain;
+}
+.favorable li:nth-of-type(2):before{
+	background-image: url(../../../img/201612191435563.jpg@300w_300h_90Q.jpg);
+	background-size: contain;
+}
+.favorable li:nth-of-type(3):before{
+	background-image: url(../../../img/2016121914360827.jpg@300w_300h_90Q.jpg);
+	background-size: contain;
+}
+.favorable li:last-of-type:before{
+	background-image: url(../../../img/2016121914361893.jpg@300w_300h_90Q.jpg);
+	background-size: contain;
+}

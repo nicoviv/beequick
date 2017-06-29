@@ -1,0 +1,81 @@
+/*秒杀页面头部*/
+.h-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.4375rem;
+	background-color: #f9fafd;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+}
+.h-header .second-bg{
+	height: 0.65625rem;
+	width: 0.65625rem;
+	margin: 0 0.3125rem;
+	background-size: cover;
+}
+.back{
+	background: url(../../img/second-back.gif) no-repeat;
+}
+.refresh{
+	background: url(../../img/second-refresh.gif) no-repeat;
+}
+.h-header p{
+	font-size: 0.4375rem;
+}
+/*秒杀商品区*/
+.kill{
+	width: 100%;
+	position: absolute;
+	top: 1.4375rem;
+	bottom: -2rem;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #fff;
+	/*height: 1000px;*/
+	overflow: auto;
+}
+.second-banner img{
+	width: 100%;
+}
+/*商品的展示区域*/
+.second-box li{
+	display: flex;
+	border-bottom: 0.3125rem solid #efefef;
+}
+.second-pimg{
+	width: 40%;
+}
+.second-pimg img{
+	width: 100%;
+}
+.second-introduction{
+	flex-grow: 1;
+	margin-left: 0.55625rem;
+}
+.second-introduction h4{
+	margin: 0.2rem auto;
+	font-size: 0.40625rem;
+}
+.second-introduction p{
+	margin: 0.2rem auto;
+}
+.sales{
+	color: #ff602c;
+	font-size: 0.66875rem;
+}
+.second-introduction button{
+	width: 3.2625rem;
+	height: .885rem;
+	color: white;
+	font-size: 0.4rem;
+	background-color: #ff602c;
+	border-radius: .4425rem;
+	border: none;
+	outline: none;
+}

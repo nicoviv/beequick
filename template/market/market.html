@@ -1,0 +1,61 @@
+<!--页面头部-->
+<header class="h-header">
+	<div class="h-scan">
+		<img src="./img/hsao.png" alt="" />
+		<p>扫一扫</p>
+	</div>
+	<p>物美超市(三旗百汇店)▼</p>
+	<div class="h-search">
+		<img src="./img/hsearch.gif" alt="" />
+		<p>搜索</p>
+	</div>
+</header>
+<div class="main">
+	<div class="main-content">
+		<!--左边菜单列表-->
+		<div class="menu">
+			<ul>
+				<li ng-repeat="i in menulist track by $index" ng-class="$index==index?'active':''" ng-click="oli($index,i)">{{i}}</li>
+
+			</ul>
+		</div>
+		<!--右边内容区域-->
+		<div class="details">
+			<div class="sort">
+				<ul>
+					<li>全部分类∨</li>
+					<li>综合排序∨</li>
+				</ul>
+			</div>
+			<!--菜单的对应产品区域-->
+			<div class="sort-products">
+				<!--对应菜单项对应不同的产品内容-->
+				<div>
+					<div class="show">
+						<ul class="show-box">
+							<li ng-repeat="i in details">
+								<div class="showpics">
+									<img ng-src="{{i.img}}" alt="" />
+								</div>
+								<div class="show-introduction">
+									<h4>{{i.name}}</h4>
+									<p><span ng-class="i.pm_desc?'favorable':'other'">{{i.pm_desc}}</span></p>
+									<p class="specifics">{{i.specifics}}</p>
+									<p>
+										<span class="now">￥{{i.price}}</span>
+										<span class="old">￥{{i.market_price}}</span>
+									</p>
+								</div>
+								<div class="number">
+									<span class="minus" ng-if="i.num>0" ng-click="addcart(i,-1)">-</span>
+									<span class="quantity" ng-if="i.num>0">{{i.num}}</span>
+									<span class="add" ng-click="addcart(i,1)">+</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

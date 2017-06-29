@@ -1,0 +1,219 @@
+/*闪送超市页面头部*/
+.h-header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #ffd600;
+	width: 100%;
+	display: flex;
+	height: 1.4375rem;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+}
+.h-header p{
+	font-size: 0.40625rem;
+	font-weight: 700;
+}
+.h-header img{
+	width: 0.625rem;
+	height: 0.625rem;
+	margin: 0 auto;
+}
+.h-scan{
+	margin-left: 0.1875rem;
+}
+.h-search{
+	margin-right: 0.1875rem;
+}
+.h-contents{
+	margin: 1.4375rem 0 0 0;
+}
+/*内容区域*/
+.main{
+	position: absolute;
+	top: 1.4375rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.main-content{
+	display: flex;
+	position: absolute;	
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+/*左边菜单部分*/
+.menu{
+	width: 25%;
+	overflow: auto;
+}
+.menu li{
+	width: 100%;
+	text-align: center;
+	height: 1.28125rem;
+	line-height: 1.28125rem;
+	font-size: 0.375rem;
+	box-sizing: border-box;
+	border-bottom: 0.03125rem solid #e0e0e0;
+	background-color: #f8f8f8;
+	position: relative;
+}
+.menu li.active::before{
+	display: inline-block;
+	content: '';
+	width: 0.15625rem;
+	height: 80%;
+	background: #ffd600;
+	position: absolute;
+	left: 0;
+	top: 10%;
+}
+.sale{
+	width: 0.875rem;
+	height: 0.906rem;
+	background: url(../../img/market-new.jpg) no-repeat;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/*右边展示区域*/
+.details{
+	width: 75%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 25%;
+}
+/*分类查询*/
+.sort{
+	/*height: 1.28125rem;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+.sort ul{
+ 	display: flex; 
+}
+.sort ul li{
+	width: 50%;
+	height: 1.28125rem;
+	text-align: center;
+	line-height: 1.28125rem;
+	font-size: 0.375rem;
+	border-bottom: 0.03125rem solid #e0e0e0;
+}
+.sort-products{
+	position: absolute;
+	top: 1.28125rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*height: 1000px;*/
+}
+
+/*二级页面的内容展示*/
+.show{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.show-box{
+	margin-left: 0.3rem;
+}
+.show-box li{
+	border-bottom: 0.015625rem solid #e0e0e0;
+	display: flex;
+	position: relative;
+}
+.showpics{
+	width: 37%;
+}
+.showpics img{
+	height: auto;
+	width: 100%;
+}
+.show-introduction h4{
+	font-size: 0.4rem;
+	margin: 0.12rem auto;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.specifics{
+	margin: 0.12rem auto;
+	font-weight: 300;
+	color: #999999;
+	font-size: 0.375rem;
+}
+/*买一送一的优惠是否显示*/
+.other{
+	height: 0.4rem;
+	font-size: 0.325rem;
+}
+.favorable{
+	height: 0.4rem;
+	color: #FFF;
+	background-color: red;
+	padding: .03rem .1rem;
+	border-radius: 0.3rem;
+	font-size: 0.325rem;
+}
+.now{
+	color: red;
+	font-size: 0.38rem;
+}
+.old{
+	text-decoration: line-through;
+	color: #999;
+	font-size: 0.38rem;
+}
+.number{
+	position: absolute;
+	/*font-size: 0.4rem;*/
+	right: 0.025rem;
+	bottom: 0.06875rem;
+	display: flex;
+	background-color: #fff;
+}
+.number span{
+	width: .8rem;
+	height: .8rem;
+	line-height: .7rem;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	font-size: 0.8rem;
+	text-align: center;
+	display: block;
+	color: #ff0000;
+}
+.number .quantity{
+	border: none;
+	border-radius: 0;
+	color: #232B33;
+	font-size: 0.5rem;
+}
+
+
+.yeah::before{
+	display: inline-block;
+	content: '';
+	width: 0.15625rem;
+	height: 80%;
+	background: #ffd600;
+	position: absolute;
+	left: 0;
+	top: 10%;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>爱鲜蜂</title>
+	<link rel="shortcut icon" href="./img/app_icon-bae075e7.png">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<script src="./lib/flexible.js"></script>
+	<script src="./lib/angular.min.js"></script>
+	<script src="./lib/angular-css.min.js"></script>
+	<script src="./lib/angular-ui-route.min.js"></script>
+	<script src="./lib/swiper.min.js"></script>
+</head>
+<body>
+	<div id="app" ng-controller="ctrl">
+		<!-- 内容区域 -->
+		<div class="contents" >
+			<div class="container" ui-view="view"></div>
+			<div class="second" ui-view="second"></div>
+		</div>
+		<!-- 页尾导航栏 -->
+		<div class="footer">
+			<ul>
+				<li>
+					<a ui-sref="home" ui-sref-active="ft-home">
+						<div class="foot-icon"></div>
+						<p class="">首页</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="market" ui-sref-active="ft-market">
+						<div class="foot-icon"></div>
+						<p>闪送超市</p>
+					</a>
+				</li>
+				<li><a ui-sref="cart" ui-sref-active="ft-cart">
+						<span ng-show="countNum.count>0">{{countNum.count}}</span>
+						<div class="foot-icon" ></div>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="mine" ui-sref-active="ft-mine">
+						<div class="foot-icon" ></div>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript" src="./app.js"></script>
+<script src="./template/home/home.js"></script>
+<script src="./template/cart/cart.js"></script>
+<script src="./template/market/market.js"></script>
+<script src="./template/mine/mine.js"></script>
+<script src="./template/second/second.js"></script>
+<script src="./service/service.js"></script>
+<script src="./template/mine/jifenstore/jifen.js"></script>
+<script src="./template/mine/load/load.js"></script>
+</body>
+</html>

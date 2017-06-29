@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+#app{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.contents{
+	position: absolute;
+	top: 0;
+	bottom: 1.5625rem;
+	right: 0;
+	left: 0;
+	/*overflow: auto;*/
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 1.5625rem;
+	background-color: rgba(246,246,246,.95);
+	/*z-index: 2;*/
+}
+.footer ul{
+	display: flex;
+}
+.footer ul li{
+	width: 25%;
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+.footer ul li a{
+	display: block;
+	height: 100%;
+	position: relative;
+}
+.footer .foot-icon{
+	background: url(../img/foot.png) no-repeat;
+	width: 0.78125rem;
+	height: 0.78125rem;
+	margin: 0.11rem auto;
+	background-size: 6.25rem 0.78125rem; 
+}
+.footer li:nth-of-type(2) .foot-icon{
+	background-position: -1.5625rem 0; 
+}
+.footer li:nth-of-type(3) .foot-icon{
+	background-position: -3.125rem 0; 
+}
+.footer li:last-of-type .foot-icon{
+	background-position: -4.6875rem 0; 
+}
+.footer p{
+	font-size: 0.34375rem;
+	color: #777;
+}
+.footer span{
+	position: absolute;
+	right: 0.3rem;
+	top: 0;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	background: #f40;
+	color: #FFF;
+	animation: big .3s;
+}
+.footer li:first-of-type .ft-home .foot-icon{
+	background-position: -0.78125rem 0; 
+	animation: move .6s;
+}
+.footer li:nth-of-type(2) .ft-market .foot-icon{
+	background-position: -2.34375rem 0; 
+	animation: move .6s;
+}
+.footer li:nth-of-type(3) .ft-cart .foot-icon{
+	background-position: -3.90625rem;
+	animation: move .6s; 
+}
+.footer li:last-of-type .ft-mine .foot-icon{
+	background-position: -5.46875rem; 
+	animation: move .6s;
+}
+/*定义激活footer的动画*/
+@keyframes move{
+	15%{
+		transform:scale(0.7)
+	}
+	30%{
+		transform:scale(1)
+	}
+	45%{
+		transform:scale(0.7)
+	}
+	60%{
+		transform:scale(1)
+	}
+	75%{
+		transform:scale(0.7)
+	}
+	88%{
+		transform:scale(0.85)
+	}
+	100%{
+		transform:scale(1)
+	}
+}
+
+@keyframes big{
+	15%{
+		transform:scale(1.15)
+	}
+	30%{
+		transform:scale(1.3)
+	}
+	45%{
+		transform:scale(1.4)
+	}
+	60%{
+		transform:scale(1.5)
+	}
+	75%{
+		transform:scale(1.3)
+	}
+	88%{
+		transform:scale(1.15)
+	}
+	100%{
+		transform:scale(1)
+	}
+}
